@@ -1,6 +1,8 @@
 animais = ['ELEFANTE','LEAO','BALEIA','POMBA','TIGRE','TUCANO','GIRAFA','ZEBRA','TUBARAO','HIPOPOTAMO','MACACO','GORILA','CACHORRO','GATO','PAPAGAIO','PEIXE']
 frutas = ['LARANJA','BANANA','PERA','ABACAXI','MELANCIA','UVA','MELAO','MORANGO','GOIABA','AMORA','PITANGA','MARACUJA','KIWI','LIMAO','MELAO']
 cores = ['AZUL','VERMELHO','AMARELO','VERDE','BRANCO','ROXO','MARROM','PRETO','CINZA','LARANJA','ROSA']
+esportes = ['FUTEBOL','VOLEI','NATACAO','BASQUETE','GOLFE','TENIS','HANDBOL']
+
 
 #escolher o grupo de palavras
 
@@ -8,7 +10,7 @@ import random
 
 print('Olá!\nAbaixo estão as opções de grupos para o jogo, por favor escolha um!')
 print('\n')
-qual_opção = {1:"ANIMAIS", 2: "FRUTAS", 3:"CORES"}
+qual_opção = {1:"ANIMAIS", 2: "FRUTAS", 3:"CORES", 4:"ESPORTES"}
 for lista, qual_opção in qual_opção.items():
     print(lista, qual_opção),
 
@@ -23,9 +25,12 @@ if grupo == '1':
 elif grupo == '2':
   print('O grupo escolhido foi o grupo 2 - Frutas')
   escolhido = random.choice(frutas)
-else:
+elif grupo == '3':
   print('O grupo escolhido foi o grupo 3 - Cores')
   escolhido = random.choice(cores)
+else:
+  print('O grupo escolhido foi o grupo 4 - Esportes')
+  escolhido = random.choice(esportes)
 print('\n')
 print('Vamos começar o jogo!')
 
