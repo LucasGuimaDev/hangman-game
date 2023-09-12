@@ -16,7 +16,7 @@ for lista, qual_opção in qual_opção.items():
 
 print("\n")
 
-opcao_escolhida = input("Qual o grupo escolhido? 1, 2 ou 3? ")
+opcao_escolhida = input("Qual o grupo escolhido? 1, 2, 3 ou 4? ")
 
 grupo = opcao_escolhida
 if grupo == '1':
